@@ -5,6 +5,7 @@ export default function ThemeButton() {
 
   const toggleTheme = () => {
     setTheme((curr) => (curr === "dark" ? "light" : "dark"));
+    console.log("new theme applied");
   };
 
   document.documentElement.classList.toggle("light");
