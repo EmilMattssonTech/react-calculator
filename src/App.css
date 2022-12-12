@@ -31,7 +31,6 @@ body {
   grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
   gap: 10px;
   padding: 40px 30px;
-  border: 1px solid #202020;
   border-radius: 20px;
   box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
     10px 10px 70px rgba(0, 0, 0, 0.25), inset -5px -5px 15px rgba(0, 0, 0, 0.25),
@@ -61,10 +60,12 @@ body {
 
 #clear {
   background: var(--big-button-color);
+  font-weight: bold;
 }
 
 #equal {
   background: var(--big-button-color);
+  font-weight: bold;
 }
 
 .output {
