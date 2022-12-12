@@ -7,3 +7,13 @@
   --output-color: #d3d3d3;
   --output-text-color: #202020;
 }
+
+#light {
+  --main-bg-color: white;
+  --button-bg: linear-gradient(180deg, white, #3f3f3f);
+  --button-text-color: black;
+  --border-color: white;
+  --big-button-color: blue;
+  --output-color: black;
+  --output-text-color: white;
+}
