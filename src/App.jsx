@@ -143,6 +143,7 @@ function App() {
       </div>
       <button
         className="span-two"
+        id="clear"
         onClick={() => dispatch({ type: ACTIONS.CLEAR })}
       >
         AC
@@ -167,6 +168,7 @@ function App() {
       <DigitButton digit="0" dispatch={dispatch} />
       <button
         className="span-two"
+        id="equal"
         onClick={() => dispatch({ type: ACTIONS.EVALUATE })}
       >
         =
