@@ -1,1 +1,9 @@
-
+:root {
+  --main-bg-color: #202020;
+  --button-bg: linear-gradient(180deg, #2f2f2f, #3f3f3f);
+  --button-text-color: #fff;
+  --border-color: #202020;
+  --big-button-color: #f00;
+  --output-color: #d3d3d3;
+  --output-text-color: #202020;
+}

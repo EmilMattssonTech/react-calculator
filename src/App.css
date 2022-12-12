@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #202020;
+  background-color: var(--main-bg-color);
 }
 
 .calculator-grid {
@@ -22,6 +22,7 @@ body {
   grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
   gap: 10px;
   padding: 40px 30px;
+  border: 1px solid #202020;
   border-radius: 20px;
   box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
     10px 10px 70px rgba(0, 0, 0, 0.25), inset -5px -5px 15px rgba(0, 0, 0, 0.25),
@@ -32,17 +33,17 @@ body {
   cursor: pointer;
   font-size: 2rem;
   border: none;
-  background: linear-gradient(180deg, #2f2f2f, #3f3f3f);
+  background: var(--button-bg);
   box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
     inset 0 -8px 8px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(0, 0, 0, 0.75),
     10px 20px 25px rgba(0, 0, 0, 0.4);
   border-radius: 10px;
-  color: #fff;
+  color: var(--button-text-color);
 }
 
 .calculator-grid button:hover,
 .calculator-grid button:focus {
-  filter: brightness(1.2);
+  filter: brightness(0.95);
 }
 
 .span-two {
@@ -50,18 +51,17 @@ body {
 }
 
 #clear {
-  background: red;
+  background: var(--big-button-color);
 }
 
 #equal {
-  background: red;
-  font-weight: bold;
+  background: var(--big-button-color);
 }
 
 .output {
   grid-column: 1 / -1;
   border-radius: 4px;
-  background-color: lightgray;
+  background-color: var(--output-color);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -72,12 +72,12 @@ body {
 }
 
 .output .previous-operand {
-  color: #202020;
+  color: var(--output-text-color);
   font-size: 2rem;
   font-weight: bold;
 }
 .output .current-operand {
-  color: blue;
-  font-weight: bold;
+  color: var(--output-text-color);
   font-size: 2rem;
+  font-weight: 600;
 }
