@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function ThemeButton() {
+export default function ThemeButton(props) {
   const [theme, setTheme] = useState("light");
 
   const toggleTheme = () => {
@@ -13,10 +13,10 @@ export default function ThemeButton() {
   return (
     <button
       id="light-and-dark"
-      onClick={toggleTheme}
+      toggleTheme={toggleTheme}
       checked={theme === "dark"}
     >
-      Lightmode
+      {theme === "light" ? "lightmode" : "darkmode"}
     </button>
   );
 }

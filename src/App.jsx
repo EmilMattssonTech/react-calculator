@@ -144,14 +144,11 @@ function App() {
 
   return (
     <div className="page" id={theme}>
-      <button
-        value={{ theme, toggleTheme }}
-        onClick={toggleTheme}
-        checked={theme === "dark"}
-      >
-        {theme === "light" ? "lightmode" : "darkmode"}
+      <button id="theme-button" onClick={toggleTheme}>
+        {theme === "light" ? "Light theme" : "Dark theme"}
       </button>
-      <div className="calculator-grid" id={theme}>
+
+      <div className="calculator-grid">
         <div className="output">
           <div className="previous-operand">
             {formatOperand(previousOperand)} {operation}
