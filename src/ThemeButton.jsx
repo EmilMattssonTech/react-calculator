@@ -1,22 +1,21 @@
 import React, { useState } from "react";
 
-export default function ThemeButton(props) {
-  const [theme, setTheme] = useState("light");
+export default function ThemeButton({ theme, setTheme }) {
+  // const toggleTheme = () => {
+  //   setTheme((curr) => (curr === "dark" ? "light" : "dark"));
+  //   console.log("new theme applied");
+  //   console.log(setTheme((curr) => (curr === "dark" ? "light" : "dark")));
+  // };
 
   const toggleTheme = () => {
     setTheme((curr) => (curr === "dark" ? "light" : "dark"));
-    console.log("new theme applied");
   };
 
   document.documentElement.classList.toggle("light");
 
   return (
-    <button
-      id="light-and-dark"
-      toggleTheme={toggleTheme}
-      checked={theme === "dark"}
-    >
-      {theme === "light" ? "lightmode" : "darkmode"}
+    <button id="theme-button" onClick={toggleTheme}>
+      {theme === "light" ? "Light theme" : "Dark theme"}
     </button>
   );
 }

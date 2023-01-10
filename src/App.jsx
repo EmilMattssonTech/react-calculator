@@ -128,7 +128,7 @@ function formatOperand(operand) {
   return `${INTEGER_FORMATTER.format(integer)}.${decimal}`;
 }
 
-function App() {
+function App({}) {
   const [{ currentOperand, previousOperand, operation }, dispatch] = useReducer(
     reducer,
     {}
@@ -136,17 +136,19 @@ function App() {
 
   const [theme, setTheme] = useState("light");
 
-  const toggleTheme = () => {
-    setTheme((curr) => (curr === "dark" ? "light" : "dark"));
-  };
+  // const toggleTheme = () => {
+  //   setTheme((curr) => (curr === "dark" ? "light" : "dark"));
+  // };
 
   document.documentElement.classList.toggle("dark");
 
   return (
     <div className="page" id={theme}>
-      <button id="theme-button" onClick={toggleTheme}>
+      {/* <button id="theme-button" onClick={toggleTheme}>
         {theme === "light" ? "Light theme" : "Dark theme"}
-      </button>
+      </button> */}
+
+      <ThemeButton setTheme={setTheme} theme={theme} />
 
       <div className="calculator-grid">
         <div className="output">
