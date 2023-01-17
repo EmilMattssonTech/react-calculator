@@ -1,12 +1,7 @@
 import React, { useState } from "react";
+import "./Themebutton.css";
 
 export default function ThemeButton({ theme, setTheme }) {
-  // const toggleTheme = () => {
-  //   setTheme((curr) => (curr === "dark" ? "light" : "dark"));
-  //   console.log("new theme applied");
-  //   console.log(setTheme((curr) => (curr === "dark" ? "light" : "dark")));
-  // };
-
   const toggleTheme = () => {
     setTheme((curr) => (curr === "dark" ? "light" : "dark"));
   };
@@ -14,8 +9,10 @@ export default function ThemeButton({ theme, setTheme }) {
   document.documentElement.classList.toggle("light");
 
   return (
-    <button id="theme-button" onClick={toggleTheme}>
-      {theme === "light" ? "Light theme" : "Dark theme"}
-    </button>
+    <label>
+      {/* {theme === "light" ? "Light theme" : "Dark theme"} */}
+      <input type="checkbox" id="checkbox" onClick={toggleTheme} />
+      <span className="check"></span>
+    </label>
   );
 }

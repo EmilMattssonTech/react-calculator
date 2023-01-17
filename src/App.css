@@ -25,18 +25,6 @@ body {
   gap: 10px;
 }
 
-#theme-button {
-  padding: 5px 4px;
-  border-radius: 8px;
-  border: none;
-  background-color: var(--big-button-color);
-  color: var(--button-text-color);
-  font-size: 16px;
-  letter-spacing: 1px;
-  box-shadow: inset -2px 0 2px rgba(0, 0, 0, 0.1),
-    inset 0 -8px 8px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(0, 0, 0, 0.75);
-}
-
 .calculator-grid {
   display: grid;
   justify-content: center;
