@@ -144,10 +144,6 @@ function App({}) {
 
   return (
     <div className="page" id={theme}>
-      {/* <button id="theme-button" onClick={toggleTheme}>
-        {theme === "light" ? "Light theme" : "Dark theme"}
-      </button> */}
-
       <ThemeButton setTheme={setTheme} theme={theme} />
 
       <div className="calculator-grid">
