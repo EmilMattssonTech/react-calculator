@@ -1,3 +1,7 @@
+label {
+  margin-bottom: 20px;
+}
+
 #checkbox {
   visibility: hidden;
   display: none;
@@ -8,21 +12,21 @@
   width: 40px;
   height: 20px;
   border-radius: 20px;
-  background-color: var(--big-button-color);
+  background-color: #202020;
   cursor: pointer;
   overflow: hidden;
   transition: ease-in 0.5s;
 }
 
 #checkbox:checked ~ .check {
-  background: #fff;
+  background: #d2d6ea;
 }
 .check::before {
   content: "";
   position: absolute;
   top: 2px;
   left: 2px;
-  background-color: #fff;
+  background: #d2d6ea;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -37,7 +41,7 @@
   position: absolute;
   top: 2px;
   right: 2px;
-  background-color: #092c3e;
+  background-color: #202020;
   width: 16px;
   height: 16px;
   border-radius: 50%;

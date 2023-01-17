@@ -103,3 +103,34 @@ button:active {
   transform: scale(0.98);
   box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
+
+@media screen and (max-width: 485px) {
+  .calculator-grid {
+    grid-template-columns: repeat(4, 5rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 5rem);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .calculator-grid {
+    grid-template-columns: repeat(4, 4rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 4rem);
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .calculator-grid {
+    grid-template-columns: repeat(4, 3rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 3rem);
+  }
+  .calculator-grid button {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .calculator-grid {
+    grid-template-columns: repeat(4, 3rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 2rem);
+  }
+}

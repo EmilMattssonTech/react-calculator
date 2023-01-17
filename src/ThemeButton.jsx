@@ -10,7 +10,6 @@ export default function ThemeButton({ theme, setTheme }) {
 
   return (
     <label>
-      {/* {theme === "light" ? "Light theme" : "Dark theme"} */}
       <input type="checkbox" id="checkbox" onClick={toggleTheme} />
       <span className="check"></span>
     </label>
